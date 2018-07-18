@@ -1,8 +1,8 @@
+using Robolab.Standard_Assets.CrossPlatformInput.Scripts;
+using Robolab.Standard_Assets.Utility;
 using UnityEngine;
-using UnityStandardAssets.CrossPlatformInput;
-using UnityStandardAssets.Utility;
 
-namespace UnityStandardAssets.Characters.FirstPerson {
+namespace Robolab.Standard_Assets.Characters.FirstPersonCharacter.Scripts {
   [RequireComponent(typeof(CharacterController))]
   [RequireComponent(typeof(AudioSource))]
   public class FirstPersonController : MonoBehaviour {
@@ -82,7 +82,9 @@ namespace UnityStandardAssets.Characters.FirstPerson {
     void Update() {
       this.RotateView();
       // the jump state needs to read here to make sure it is not missed
-      if (!this.m_Jump) this.m_Jump = CrossPlatformInputManager.GetButtonDown("Jump");
+      if (!this.m_Jump) {
+        this.m_Jump = CrossPlatformInputManager.GetButtonDown("Jump");
+      }
 
       if (!this.m_PreviouslyGrounded && this.m_CharacterController.isGrounded) {
         this.StartCoroutine(this.m_JumpBob.DoBobCycle());
@@ -91,8 +93,9 @@ namespace UnityStandardAssets.Characters.FirstPerson {
         this.m_Jumping = false;
       }
 
-      if (!this.m_CharacterController.isGrounded && !this.m_Jumping && this.m_PreviouslyGrounded)
+      if (!this.m_CharacterController.isGrounded && !this.m_Jumping && this.m_PreviouslyGrounded) {
         this.m_MoveDir.y = 0f;
+      }
 
       this.m_PreviouslyGrounded = this.m_CharacterController.isGrounded;
     }
@@ -133,8 +136,9 @@ namespace UnityStandardAssets.Characters.FirstPerson {
           this.m_Jump = false;
           this.m_Jumping = true;
         }
-      } else
+      } else {
         this.m_MoveDir += Physics.gravity * this.m_GravityMultiplier * Time.fixedDeltaTime;
+      }
 
       this.m_CollisionFlags = this.m_CharacterController.Move(this.m_MoveDir * Time.fixedDeltaTime);
 
@@ -158,7 +162,9 @@ namespace UnityStandardAssets.Characters.FirstPerson {
             * Time.fixedDeltaTime;
       }
 
-      if (!(this.m_StepCycle > this.m_NextStep)) return;
+      if (!(this.m_StepCycle > this.m_NextStep)) {
+        return;
+      }
 
       this.m_NextStep = this.m_StepCycle + this.m_StepInterval;
 
@@ -166,7 +172,10 @@ namespace UnityStandardAssets.Characters.FirstPerson {
     }
 
     void PlayFootStepAudio() {
-      if (!this.m_CharacterController.isGrounded) return;
+      if (!this.m_CharacterController.isGrounded) {
+        return;
+      }
+
       // pick & play a random footstep sound from the array,
       // excluding sound at index 0
       var n = Random.Range(1, this.m_FootstepSounds.Length);
@@ -179,7 +188,10 @@ namespace UnityStandardAssets.Characters.FirstPerson {
 
     void UpdateCameraPosition(float speed) {
       Vector3 newCameraPosition;
-      if (!this.m_UseHeadBob) return;
+      if (!this.m_UseHeadBob) {
+        return;
+      }
+
       if (this.m_CharacterController.velocity.magnitude > 0 && this.m_CharacterController.isGrounded) {
         this.m_Camera.transform.localPosition = this.m_HeadBob.DoHeadBob(
             this.m_CharacterController.velocity.magnitude
@@ -211,7 +223,9 @@ namespace UnityStandardAssets.Characters.FirstPerson {
       this.m_Input = new Vector2(horizontal, vertical);
 
       // normalize input if it exceeds 1 in combined length:
-      if (this.m_Input.sqrMagnitude > 1) this.m_Input.Normalize();
+      if (this.m_Input.sqrMagnitude > 1) {
+        this.m_Input.Normalize();
+      }
 
       // handle speed change to give an fov kick
       // only if the player is going to a run, is running and the fovkick is to be used
@@ -228,9 +242,14 @@ namespace UnityStandardAssets.Characters.FirstPerson {
     void OnControllerColliderHit(ControllerColliderHit hit) {
       var body = hit.collider.attachedRigidbody;
       //dont move the rigidbody if the character is on top of it
-      if (this.m_CollisionFlags == CollisionFlags.Below) return;
+      if (this.m_CollisionFlags == CollisionFlags.Below) {
+        return;
+      }
 
-      if (body == null || body.isKinematic) return;
+      if (body == null || body.isKinematic) {
+        return;
+      }
+
       body.AddForceAtPosition(this.m_CharacterController.velocity * 0.1f, hit.point, ForceMode.Impulse);
     }
   }

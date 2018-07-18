@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace UnityStandardAssets.CrossPlatformInput {
+namespace Robolab.Standard_Assets.CrossPlatformInput.Scripts {
   public class InputAxisScrollbar : MonoBehaviour {
     public string axis;
 

@@ -2,7 +2,7 @@ using System;
 using System.Collections;
 using UnityEngine;
 
-namespace UnityStandardAssets.Utility {
+namespace Robolab.Standard_Assets.Utility {
   [Serializable]
   public class FOVKick {
     public Camera Camera;
@@ -30,8 +30,9 @@ namespace UnityStandardAssets.Utility {
     }
 
     void CheckStatus(Camera camera) {
-      if (camera == null)
+      if (camera == null) {
         throw new Exception("FOVKick camera is null, please supply the camera to the constructor");
+      }
 
       if (this.IncreaseCurve == null) {
         throw new Exception(

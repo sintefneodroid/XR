@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-namespace UnityStandardAssets.CrossPlatformInput {
+namespace Robolab.Standard_Assets.CrossPlatformInput.Scripts {
   [RequireComponent(typeof(Image))]
   public class TouchPad : MonoBehaviour,
                           IPointerDownHandler,
@@ -84,9 +84,13 @@ namespace UnityStandardAssets.CrossPlatformInput {
 
     void UpdateVirtualAxes(Vector3 value) {
       value = value.normalized;
-      if (this.m_UseX) this.m_HorizontalVirtualAxis.Update(value.x);
+      if (this.m_UseX) {
+        this.m_HorizontalVirtualAxis.Update(value.x);
+      }
 
-      if (this.m_UseY) this.m_VerticalVirtualAxis.Update(value.y);
+      if (this.m_UseY) {
+        this.m_VerticalVirtualAxis.Update(value.y);
+      }
     }
 
     public void OnPointerDown(PointerEventData data) {
@@ -99,7 +103,10 @@ namespace UnityStandardAssets.CrossPlatformInput {
     }
 
     void Update() {
-      if (!this.m_Dragging) return;
+      if (!this.m_Dragging) {
+        return;
+      }
+
       if (Input.touchCount >= this.m_Id + 1 && this.m_Id != -1) {
         #if !UNITY_EDITOR
             if (controlStyle == ControlStyle.Swipe)
@@ -128,11 +135,13 @@ namespace UnityStandardAssets.CrossPlatformInput {
     }
 
     void OnDisable() {
-      if (CrossPlatformInputManager.AxisExists(this.horizontalAxisName))
+      if (CrossPlatformInputManager.AxisExists(this.horizontalAxisName)) {
         CrossPlatformInputManager.UnRegisterVirtualAxis(this.horizontalAxisName);
+      }
 
-      if (CrossPlatformInputManager.AxisExists(this.verticalAxisName))
+      if (CrossPlatformInputManager.AxisExists(this.verticalAxisName)) {
         CrossPlatformInputManager.UnRegisterVirtualAxis(this.verticalAxisName);
+      }
     }
   }
 }

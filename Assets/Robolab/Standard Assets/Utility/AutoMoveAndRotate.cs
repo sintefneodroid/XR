@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace UnityStandardAssets.Utility {
+namespace Robolab.Standard_Assets.Utility {
   public class AutoMoveAndRotate : MonoBehaviour {
     public bool ignoreTimescale;
     float m_LastRealTime;

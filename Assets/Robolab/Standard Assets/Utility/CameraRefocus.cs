@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace UnityStandardAssets.Utility {
+namespace Robolab.Standard_Assets.Utility {
   public class CameraRefocus {
     readonly Vector3 m_OrigCameraPos;
     public Camera Camera;
@@ -34,7 +34,9 @@ namespace UnityStandardAssets.Utility {
     }
 
     public void SetFocusPoint() {
-      if (this.m_Refocus) this.Camera.transform.LookAt(this.Lookatpoint);
+      if (this.m_Refocus) {
+        this.Camera.transform.LookAt(this.Lookatpoint);
+      }
     }
   }
 }

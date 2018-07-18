@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace UnityStandardAssets.Utility {
+namespace Robolab.Standard_Assets.Utility {
   public class ObjectResetter : MonoBehaviour {
     Vector3 originalPosition;
     Quaternion originalRotation;
@@ -26,8 +26,9 @@ namespace UnityStandardAssets.Utility {
 
       // remove any gameobjects added (fire, skid trails, etc)
       foreach (var t in this.GetComponentsInChildren<Transform>()) {
-        if (!this.originalStructure.Contains(t))
+        if (!this.originalStructure.Contains(t)) {
           t.parent = null;
+        }
       }
 
       this.transform.position = this.originalPosition;

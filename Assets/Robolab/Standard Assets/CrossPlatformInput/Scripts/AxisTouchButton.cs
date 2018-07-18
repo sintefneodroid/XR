@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-namespace UnityStandardAssets.CrossPlatformInput {
+namespace Robolab.Standard_Assets.CrossPlatformInput.Scripts {
   public class AxisTouchButton : MonoBehaviour,
                                  IPointerDownHandler,
                                  IPointerUpHandler {
@@ -18,7 +18,10 @@ namespace UnityStandardAssets.CrossPlatformInput {
     public float returnToCentreSpeed = 3; // The speed at which the button will return to its centre
 
     public void OnPointerDown(PointerEventData data) {
-      if (this.m_PairedWith == null) this.FindPairedButton();
+      if (this.m_PairedWith == null) {
+        this.FindPairedButton();
+      }
+
       // update the axis and record that the button has been pressed this frame
       this.m_Axis.Update(
           Mathf.MoveTowards(this.m_Axis.GetValue, this.axisValue, this.responseSpeed * Time.deltaTime));
@@ -33,8 +36,9 @@ namespace UnityStandardAssets.CrossPlatformInput {
         // if the axis doesnt exist create a new one in cross platform input
         this.m_Axis = new CrossPlatformInputManager.VirtualAxis(this.axisName);
         CrossPlatformInputManager.RegisterVirtualAxis(this.m_Axis);
-      } else
+      } else {
         this.m_Axis = CrossPlatformInputManager.VirtualAxisReference(this.axisName);
+      }
 
       this.FindPairedButton();
     }
@@ -46,8 +50,9 @@ namespace UnityStandardAssets.CrossPlatformInput {
 
       if (other_axis_buttons != null) {
         for (var i = 0; i < other_axis_buttons.Length; i++) {
-          if (other_axis_buttons[i].axisName == this.axisName && other_axis_buttons[i] != this)
+          if (other_axis_buttons[i].axisName == this.axisName && other_axis_buttons[i] != this) {
             this.m_PairedWith = other_axis_buttons[i];
+          }
         }
       }
     }

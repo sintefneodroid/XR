@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-namespace UnityStandardAssets.CrossPlatformInput {
+namespace Robolab.Standard_Assets.CrossPlatformInput.Scripts {
   public class Joystick : MonoBehaviour,
                           IPointerDownHandler,
                           IPointerUpHandler,
@@ -71,9 +71,13 @@ namespace UnityStandardAssets.CrossPlatformInput {
       var delta = this.m_StartPos - value;
       delta.y = -delta.y;
       delta /= this.MovementRange;
-      if (this.m_UseX) this.m_HorizontalVirtualAxis.Update(-delta.x);
+      if (this.m_UseX) {
+        this.m_HorizontalVirtualAxis.Update(-delta.x);
+      }
 
-      if (this.m_UseY) this.m_VerticalVirtualAxis.Update(delta.y);
+      if (this.m_UseY) {
+        this.m_VerticalVirtualAxis.Update(delta.y);
+      }
     }
 
     void CreateVirtualAxes() {
@@ -95,8 +99,13 @@ namespace UnityStandardAssets.CrossPlatformInput {
 
     void OnDisable() {
       // remove the joysticks from the cross platform input
-      if (this.m_UseX) this.m_HorizontalVirtualAxis.Remove();
-      if (this.m_UseY) this.m_VerticalVirtualAxis.Remove();
+      if (this.m_UseX) {
+        this.m_HorizontalVirtualAxis.Remove();
+      }
+
+      if (this.m_UseY) {
+        this.m_VerticalVirtualAxis.Remove();
+      }
     }
   }
 }

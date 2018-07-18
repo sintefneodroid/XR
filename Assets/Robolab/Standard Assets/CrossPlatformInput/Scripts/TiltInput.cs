@@ -2,12 +2,12 @@ using System;
 using UnityEditor;
 using UnityEngine;
 
-#if UNITY_EDITOR
+namespace Robolab.Standard_Assets.CrossPlatformInput.Scripts {
+  #if UNITY_EDITOR
 
-#endif
+  #endif
 
-namespace UnityStandardAssets.CrossPlatformInput {
-  // helps with managing tilt input on mobile devices
+// helps with managing tilt input on mobile devices
   public class TiltInput : MonoBehaviour {
     // options for the various orientations
     public enum AxisOptions {
@@ -78,9 +78,7 @@ namespace UnityStandardAssets.CrossPlatformInput {
       public MappingType type;
     }
   }
-}
 
-namespace UnityStandardAssets.CrossPlatformInput.Inspector {
   #if UNITY_EDITOR
   [CustomPropertyDrawer(typeof(TiltInput.AxisMapping))]
   public class TiltInputAxisStylePropertyDrawer : PropertyDrawer {

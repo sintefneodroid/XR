@@ -1,8 +1,8 @@
 using System;
+using Robolab.Standard_Assets.CrossPlatformInput.Scripts.PlatformSpecific;
 using UnityEngine;
-using UnityStandardAssets.CrossPlatformInput.PlatformSpecific;
 
-namespace UnityStandardAssets.CrossPlatformInput {
+namespace Robolab.Standard_Assets.CrossPlatformInput.Scripts {
   public static class CrossPlatformInputManager {
     public enum ActiveInputMethod {
       Hardware,
@@ -49,8 +49,10 @@ namespace UnityStandardAssets.CrossPlatformInput {
     }
 
     public static void UnRegisterVirtualAxis(string name) {
-      if (name == null)
+      if (name == null) {
         throw new ArgumentNullException("name");
+      }
+
       activeInput.UnRegisterVirtualAxis(name);
     }
 
@@ -147,8 +149,10 @@ namespace UnityStandardAssets.CrossPlatformInput {
 
       // A controller gameobject should call this function when the button is pressed down
       public void Pressed() {
-        if (this.GetButton)
+        if (this.GetButton) {
           return;
+        }
+
         this.GetButton = true;
         this.m_LastPressedFrame = Time.frameCount;
       }

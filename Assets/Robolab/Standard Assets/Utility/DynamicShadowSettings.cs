@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace UnityStandardAssets.Utility {
+namespace Robolab.Standard_Assets.Utility {
   public class DynamicShadowSettings : MonoBehaviour {
     public float adaptTime = 1;
     float m_ChangeSpeed;
@@ -22,7 +22,9 @@ namespace UnityStandardAssets.Utility {
       var ray = new Ray(Camera.main.transform.position, -Vector3.up);
       RaycastHit hit;
       var height = this.transform.position.y;
-      if (Physics.Raycast(ray, out hit)) height = hit.distance;
+      if (Physics.Raycast(ray, out hit)) {
+        height = hit.distance;
+      }
 
       if (Mathf.Abs(height - this.m_SmoothHeight) > 1) {
         this.m_SmoothHeight = Mathf.SmoothDamp(

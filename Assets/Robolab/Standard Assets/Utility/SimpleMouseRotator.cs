@@ -1,7 +1,7 @@
+using Robolab.Standard_Assets.CrossPlatformInput.Scripts;
 using UnityEngine;
-using UnityStandardAssets.CrossPlatformInput;
 
-namespace UnityStandardAssets.Utility {
+namespace Robolab.Standard_Assets.Utility {
   public class SimpleMouseRotator : MonoBehaviour {
     public bool autoZeroHorizontalOnMobile;
     public bool autoZeroVerticalOnMobile = true;

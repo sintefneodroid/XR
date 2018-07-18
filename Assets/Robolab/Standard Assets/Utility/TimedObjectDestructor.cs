@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace UnityStandardAssets.Utility {
+namespace Robolab.Standard_Assets.Utility {
   public class TimedObjectDestructor : MonoBehaviour {
     [SerializeField] readonly float m_TimeOut = 1.0f;
     [SerializeField] bool m_DetachChildren;
@@ -8,7 +8,10 @@ namespace UnityStandardAssets.Utility {
     void Awake() { this.Invoke("DestroyNow", this.m_TimeOut); }
 
     void DestroyNow() {
-      if (this.m_DetachChildren) this.transform.DetachChildren();
+      if (this.m_DetachChildren) {
+        this.transform.DetachChildren();
+      }
+
       Object.Destroy(this.gameObject);
     }
   }

@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-namespace UnityStandardAssets.Utility {
+namespace Robolab.Standard_Assets.Utility {
   public class DragRigidbody : MonoBehaviour {
     const float k_Spring = 50.0f;
     const float k_Damper = 5.0f;
@@ -14,7 +14,9 @@ namespace UnityStandardAssets.Utility {
 
     void Update() {
       // Make sure the user pressed the mouse down
-      if (!Input.GetMouseButtonDown(0)) return;
+      if (!Input.GetMouseButtonDown(0)) {
+        return;
+      }
 
       var mainCamera = this.FindCamera();
 
@@ -25,10 +27,14 @@ namespace UnityStandardAssets.Utility {
               mainCamera.ScreenPointToRay(Input.mousePosition).direction,
               out hit,
               100,
-              Physics.DefaultRaycastLayers))
+              Physics.DefaultRaycastLayers)) {
         return;
+      }
+
       // We need to hit a rigidbody that is not kinematic
-      if (!hit.rigidbody || hit.rigidbody.isKinematic) return;
+      if (!hit.rigidbody || hit.rigidbody.isKinematic) {
+        return;
+      }
 
       if (!this.m_SpringJoint) {
         var go = new GameObject("Rigidbody dragger");

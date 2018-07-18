@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace UnityStandardAssets.Utility {
+namespace Robolab.Standard_Assets.Utility {
   [Serializable]
   public class CurveControlledBob {
     public AnimationCurve Bobcurve = new AnimationCurve(
@@ -42,8 +42,13 @@ namespace UnityStandardAssets.Utility {
       this.m_CyclePositionY +=
           speed * Time.deltaTime / this.m_BobBaseInterval * this.VerticaltoHorizontalRatio;
 
-      if (this.m_CyclePositionX > this.m_Time) this.m_CyclePositionX = this.m_CyclePositionX - this.m_Time;
-      if (this.m_CyclePositionY > this.m_Time) this.m_CyclePositionY = this.m_CyclePositionY - this.m_Time;
+      if (this.m_CyclePositionX > this.m_Time) {
+        this.m_CyclePositionX = this.m_CyclePositionX - this.m_Time;
+      }
+
+      if (this.m_CyclePositionY > this.m_Time) {
+        this.m_CyclePositionY = this.m_CyclePositionY - this.m_Time;
+      }
 
       return new Vector3(xPos, yPos, 0f);
     }

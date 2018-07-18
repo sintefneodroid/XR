@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace UnityStandardAssets.Utility {
+namespace Robolab.Standard_Assets.Utility {
   [RequireComponent(typeof(Text))]
   public class FPSCounter : MonoBehaviour {
     const float fpsMeasurePeriod = 0.5f;

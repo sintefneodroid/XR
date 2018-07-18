@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace UnityStandardAssets.Utility {
+namespace Robolab.Standard_Assets.Utility {
   public class SmoothFollow : MonoBehaviour {
     // The distance in the x-z plane to the target
     [SerializeField] readonly float distance = 10.0f;
@@ -21,8 +21,9 @@ namespace UnityStandardAssets.Utility {
     // Update is called once per frame
     void LateUpdate() {
       // Early out if we don't have a target
-      if (!this.target)
+      if (!this.target) {
         return;
+      }
 
       // Calculate the current rotation angles
       var wantedRotationAngle = this.target.eulerAngles.y;

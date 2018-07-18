@@ -2,7 +2,7 @@ using System;
 using UnityEngine;
 using Object = UnityEngine.Object;
 
-namespace UnityStandardAssets.Utility {
+namespace Robolab.Standard_Assets.Utility {
   public class ActivateTrigger : MonoBehaviour {
     // A multi-purpose script which causes an action to occur when
     // a trigger collider is entered.
@@ -44,13 +44,16 @@ namespace UnityStandardAssets.Utility {
         var current_target = this.target ?? this.gameObject;
         var target_behaviour = current_target as Behaviour;
         var target_game_object = current_target as GameObject;
-        if (target_behaviour != null)
+        if (target_behaviour != null) {
           target_game_object = target_behaviour.gameObject;
+        }
 
         switch (this.action) {
           case Mode.Trigger:
-            if (target_game_object != null)
+            if (target_game_object != null) {
               target_game_object.BroadcastMessage("DoActivateTrigger");
+            }
+
             break;
           case Mode.Replace:
             if (this.source != null) {
@@ -65,20 +68,28 @@ namespace UnityStandardAssets.Utility {
 
             break;
           case Mode.Activate:
-            if (target_game_object != null)
+            if (target_game_object != null) {
               target_game_object.SetActive(true);
+            }
+
             break;
           case Mode.Enable:
-            if (target_behaviour != null)
+            if (target_behaviour != null) {
               target_behaviour.enabled = true;
+            }
+
             break;
           case Mode.Animate:
-            if (target_game_object != null)
+            if (target_game_object != null) {
               target_game_object.GetComponent<Animation>().Play();
+            }
+
             break;
           case Mode.Deactivate:
-            if (target_game_object != null)
+            if (target_game_object != null) {
               target_game_object.SetActive(false);
+            }
+
             break;
           default:
             throw new ArgumentOutOfRangeException();

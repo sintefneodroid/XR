@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-namespace UnityStandardAssets.Utility {
+namespace Robolab.Standard_Assets.Utility {
   public class ParticleSystemDestroyer : MonoBehaviour {
     bool m_EarlyStop;
 
@@ -18,14 +18,18 @@ namespace UnityStandardAssets.Utility {
       var systems = this.GetComponentsInChildren<ParticleSystem>();
 
       // find out the maximum lifetime of any particles in this effect
-      foreach (var system in systems)
+      foreach (var system in systems) {
         this.m_MaxLifetime = Mathf.Max(system.main.startLifetime.constant, this.m_MaxLifetime);
+      }
 
       // wait for random duration
 
       var stopTime = Time.time + Random.Range(this.minDuration, this.maxDuration);
 
-      while (Time.time < stopTime && !this.m_EarlyStop) yield return null;
+      while (Time.time < stopTime && !this.m_EarlyStop) {
+        yield return null;
+      }
+
       Debug.Log("stopping " + this.name);
 
       // turn off emission

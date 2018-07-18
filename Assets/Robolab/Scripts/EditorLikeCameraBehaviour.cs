@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
 
-namespace SceneAssets.Robolab.Scripts {
+namespace Robolab.Scripts {
+  /// <summary>
+  /// 
+  /// </summary>
   public class EditorLikeCameraBehaviour : MonoBehaviour {
     Vector3 _last_mouse = new Vector3(255, 255, 255);
 
@@ -33,8 +36,9 @@ namespace SceneAssets.Robolab.Scripts {
     }
 
     void Update() {
-      if (Input.GetMouseButtonDown(1))
+      if (Input.GetMouseButtonDown(1)) {
         this._last_mouse = Input.mousePosition; // $CTK reset when we begin
+      }
 
       if (!this.RotateOnlyIfMousedown || this.RotateOnlyIfMousedown && Input.GetMouseButton(1)) {
         this._last_mouse = Input.mousePosition - this._last_mouse;
@@ -73,21 +77,30 @@ namespace SceneAssets.Robolab.Scripts {
         new_position.x = this.transform.position.x;
         new_position.z = this.transform.position.z;
         this.transform.position = new_position;
-      } else
+      } else {
         this.transform.Translate(p);
+      }
     }
 
     Vector3 GetBaseInput() {
       //returns the basic values, if it's 0 than it's not active.
       var p_velocity = new Vector3();
-      if (Input.GetKey(KeyCode.W))
+      if (Input.GetKey(KeyCode.W)) {
         p_velocity += new Vector3(0, 0, 1);
-      if (Input.GetKey(KeyCode.S))
+      }
+
+      if (Input.GetKey(KeyCode.S)) {
         p_velocity += new Vector3(0, 0, -1);
-      if (Input.GetKey(KeyCode.A))
+      }
+
+      if (Input.GetKey(KeyCode.A)) {
         p_velocity += new Vector3(-1, 0, 0);
-      if (Input.GetKey(KeyCode.D))
+      }
+
+      if (Input.GetKey(KeyCode.D)) {
         p_velocity += new Vector3(1, 0, 0);
+      }
+
       return p_velocity;
     }
   }

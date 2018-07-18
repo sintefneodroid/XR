@@ -1,8 +1,8 @@
 using System;
+using Robolab.Standard_Assets.CrossPlatformInput.Scripts;
 using UnityEngine;
-using UnityStandardAssets.CrossPlatformInput;
 
-namespace UnityStandardAssets.Characters.FirstPerson {
+namespace Robolab.Standard_Assets.Characters.FirstPersonCharacter.Scripts {
   [Serializable]
   public class MouseLook {
     public bool clampVerticalRotation = true;
@@ -32,8 +32,9 @@ namespace UnityStandardAssets.Characters.FirstPerson {
         this.m_CameraTargetRot *= Quaternion.Euler(-xRot, 0f, 0f);
       }
 
-      if (this.clampVerticalRotation)
+      if (this.clampVerticalRotation) {
         this.m_CameraTargetRot = this.ClampRotationAroundXAxis(this.m_CameraTargetRot);
+      }
 
       if (this.smooth) {
         character.localRotation = Quaternion.Slerp(
@@ -63,14 +64,17 @@ namespace UnityStandardAssets.Characters.FirstPerson {
 
     public void UpdateCursorLock() {
       //if the user set "lockCursor" we check & properly lock the cursos
-      if (this.lockCursor) this.InternalLockUpdate();
+      if (this.lockCursor) {
+        this.InternalLockUpdate();
+      }
     }
 
     void InternalLockUpdate() {
-      if (Input.GetKeyUp(KeyCode.Escape))
+      if (Input.GetKeyUp(KeyCode.Escape)) {
         this.m_cursorIsLocked = false;
-      else if (Input.GetMouseButtonUp(0))
+      } else if (Input.GetMouseButtonUp(0)) {
         this.m_cursorIsLocked = true;
+      }
 
       if (this.m_cursorIsLocked) {
         Cursor.lockState = CursorLockMode.Locked;
