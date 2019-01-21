@@ -1,14 +1,17 @@
 {
   "dependencies": {
-    "com.neodroid.droid": "https://github.com/sintefneodroid/droid.git",
-    "com.unity.collab-proxy": "1.2.9",
-    "com.unity.package-manager-ui": "0.0.0-builtin",
-    "com.unity.postprocessing": "2.0.16-preview",
+    "com.neodroid.droid": "https://github.com/sintefneodroid/droid.git#master",
+    "com.unity.collab-proxy": "1.2.15",
+    "com.unity.inputsystem": "0.1.2-preview",
+    "com.unity.package-manager-ui": "2.1.1",
+    "com.unity.postprocessing": "2.1.2",
     "com.unity.probuilder": "3.0.9",
     "com.unity.progrids": "3.0.3-preview.0",
     "com.unity.textmeshpro": "1.3.0",
-    "com.unity.timeline": "0.0.0-builtin",
-    "com.unity.xr.legacyinputhelpers": "1.0.0",
+    "com.unity.timeline": "1.0.0",
+    "com.unity.xr.legacyinputhelpers": "1.3.1",
+    "com.unity.xr.oculus.standalone": "1.29.0",
+    "com.unity.xr.openvr.standalone": "1.0.2",
     "com.unity.modules.ai": "1.0.0",
     "com.unity.modules.animation": "1.0.0",
     "com.unity.modules.assetbundle": "1.0.0",
@@ -42,8 +45,8 @@
   },
   "lock": {
     "com.neodroid.droid": {
-      "hash": "34dcd438b71eb75fb424890cc97b5c1c5ec36ce5",
-      "revision": "HEAD"
+      "hash": "f71fd3943a8b2fc95caedfe3782cb5d06447acef",
+      "revision": "master"
     }
   }
 }

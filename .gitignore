@@ -12,6 +12,11 @@
 JetBrains/
 
 *[Ee]xcluded.*
+*[Ee]xclude.*
+*[Ee]xcluded*
+*[Ee]xclude*
+*.orig
+*.meta~*
 
 sysinfo.txt
 
@@ -48,3 +53,5 @@ Environments/Builds/
 .vscode
 
 *.unitypackage
+
+Assets/ScenePreviews/*.png*

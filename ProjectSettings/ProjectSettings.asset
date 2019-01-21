@@ -12,7 +12,7 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: DefaultCompany
+  companyName: Neodroid
   productName: XReality
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
@@ -53,7 +53,7 @@ PlayerSettings:
   iosShowActivityIndicatorOnLoading: -1
   androidShowActivityIndicatorOnLoading: -1
   iosAppInBackgroundBehavior: 0
-  displayResolutionDialog: 1
+  displayResolutionDialog: 2
   iosAllowHTTPDownload: 1
   allowedAutorotateToPortrait: 1
   allowedAutorotateToPortraitUpsideDown: 1
@@ -79,7 +79,7 @@ PlayerSettings:
   usePlayerLog: 1
   bakeCollisionMeshes: 0
   forceSingleInstance: 0
-  resizableWindow: 0
+  resizableWindow: 1
   useMacAppStoreValidation: 0
   macAppStoreCategory: public.app-category.games
   gpuSkinning: 1
@@ -107,6 +107,9 @@ PlayerSettings:
   xboxOnePresentImmediateThreshold: 0
   switchQueueCommandMemory: 0
   switchQueueControlMemory: 0
+  switchNVNShaderPoolsGranularity: 33554432
+  switchNVNDefaultPoolsGranularity: 16777216
+  switchNVNOtherPoolsGranularity: 16777216
   vulkanEnableSetSRGBWrite: 0
   m_SupportedAspectRatios:
     4:3: 1
@@ -241,6 +244,7 @@ PlayerSettings:
   tvOSManualSigningProvisioningProfileType: 0
   appleEnableAutomaticSigning: 0
   iOSRequireARKit: 0
+  iOSAutomaticallyDetectAndAddCapabilities: 1
   appleEnableProMotion: 0
   clonedFromGUID: 56e7a2d3a00f33d44bdd161b773c35b5
   templatePackageId: com.unity.3dempty@0.0.2
@@ -272,10 +276,28 @@ PlayerSettings:
   m_BuildTargetGraphicsAPIs: []
   m_BuildTargetVRSettings:
   - m_BuildTarget: Standalone
-    m_Enabled: 0
+    m_Enabled: 1
     m_Devices:
-    - Oculus
     - OpenVR
+    - None
+  - m_BuildTarget: Android
+    m_Enabled: 0
+    m_Devices: []
+  - m_BuildTarget: WebGL
+    m_Enabled: 0
+    m_Devices: []
+  - m_BuildTarget: PS4
+    m_Enabled: 0
+    m_Devices: []
+  - m_BuildTarget: XboxOne
+    m_Enabled: 0
+    m_Devices: []
+  - m_BuildTarget: tvOS
+    m_Enabled: 0
+    m_Devices: []
+  - m_BuildTarget: Lumin
+    m_Enabled: 0
+    m_Devices: []
   m_BuildTargetEnableVuforiaSettings: []
   openGLRequireES31: 0
   openGLRequireES31AEP: 0
@@ -409,6 +431,7 @@ PlayerSettings:
   switchAllowsRuntimeAddOnContentInstall: 0
   switchDataLossConfirmation: 0
   switchUserAccountLockEnabled: 0
+  switchSystemResourceMemory: 16777216
   switchSupportedNpadStyles: 3
   switchNativeFsCacheSize: 32
   switchIsHoldTypeHorizontal: 0
@@ -512,21 +535,21 @@ PlayerSettings:
   webGLThreadsSupport: 0
   webGLWasmStreaming: 0
   scriptingDefineSymbols:
-    1: UNITY_POST_PROCESSING_STACK_V2;NEODROID;NEODROID_EXISTS
+    1: NEODROID;NEODROID_EXISTS;NEODROID_USE_GITHUB_EXTENSION;UNITY_POST_PROCESSING_STACK_V2;USE_GITHUB_EXTENSION;VRTK_VERSION_3_3_0;VRTK_VERSION_3_3_0_OR_NEWER;VRTK_VERSION_3_1_0_OR_NEWER;VRTK_VERSION_3_2_0_OR_NEWER;VRTK_VERSION_3_2_1_OR_NEWER
     4: UNITY_POST_PROCESSING_STACK_V2
-    7: UNITY_POST_PROCESSING_STACK_V2
-    13: UNITY_POST_PROCESSING_STACK_V2
-    14: UNITY_POST_PROCESSING_STACK_V2
+    7: UNITY_POST_PROCESSING_STACK_V2;VRTK_VERSION_3_3_0;VRTK_VERSION_3_3_0_OR_NEWER;VRTK_VERSION_3_1_0_OR_NEWER;VRTK_VERSION_3_2_0_OR_NEWER;VRTK_VERSION_3_2_1_OR_NEWER
+    13: UNITY_POST_PROCESSING_STACK_V2;VRTK_VERSION_3_3_0;VRTK_VERSION_3_3_0_OR_NEWER;VRTK_VERSION_3_1_0_OR_NEWER;VRTK_VERSION_3_2_0_OR_NEWER;VRTK_VERSION_3_2_1_OR_NEWER
+    14: VRTK_DEFINE_SDK_WINDOWSMR
     17: UNITY_POST_PROCESSING_STACK_V2
     18: UNITY_POST_PROCESSING_STACK_V2
-    19: UNITY_POST_PROCESSING_STACK_V2
-    21: UNITY_POST_PROCESSING_STACK_V2
+    19: UNITY_POST_PROCESSING_STACK_V2;VRTK_VERSION_3_3_0;VRTK_VERSION_3_3_0_OR_NEWER;VRTK_VERSION_3_1_0_OR_NEWER;VRTK_VERSION_3_2_0_OR_NEWER;VRTK_VERSION_3_2_1_OR_NEWER
+    21: UNITY_POST_PROCESSING_STACK_V2;VRTK_VERSION_3_3_0;VRTK_VERSION_3_3_0_OR_NEWER;VRTK_VERSION_3_1_0_OR_NEWER;VRTK_VERSION_3_2_0_OR_NEWER;VRTK_VERSION_3_2_1_OR_NEWER
     23: UNITY_POST_PROCESSING_STACK_V2
     24: UNITY_POST_PROCESSING_STACK_V2
-    25: UNITY_POST_PROCESSING_STACK_V2
-    26: UNITY_POST_PROCESSING_STACK_V2
-    27: UNITY_POST_PROCESSING_STACK_V2
-    28: UNITY_POST_PROCESSING_STACK_V2
+    25: UNITY_POST_PROCESSING_STACK_V2;VRTK_VERSION_3_3_0;VRTK_VERSION_3_3_0_OR_NEWER;VRTK_VERSION_3_1_0_OR_NEWER;VRTK_VERSION_3_2_0_OR_NEWER;VRTK_VERSION_3_2_1_OR_NEWER
+    26: UNITY_POST_PROCESSING_STACK_V2;VRTK_VERSION_3_3_0;VRTK_VERSION_3_3_0_OR_NEWER;VRTK_VERSION_3_1_0_OR_NEWER;VRTK_VERSION_3_2_0_OR_NEWER;VRTK_VERSION_3_2_1_OR_NEWER
+    27: UNITY_POST_PROCESSING_STACK_V2;VRTK_VERSION_3_3_0;VRTK_VERSION_3_3_0_OR_NEWER;VRTK_VERSION_3_1_0_OR_NEWER;VRTK_VERSION_3_2_0_OR_NEWER;VRTK_VERSION_3_2_1_OR_NEWER
+    28: UNITY_POST_PROCESSING_STACK_V2;VRTK_VERSION_3_3_0;VRTK_VERSION_3_3_0_OR_NEWER;VRTK_VERSION_3_1_0_OR_NEWER;VRTK_VERSION_3_2_0_OR_NEWER;VRTK_VERSION_3_2_1_OR_NEWER
   platformArchitecture: {}
   scriptingBackend: {}
   il2cppCompilerConfiguration: {}
@@ -610,7 +633,6 @@ PlayerSettings:
   luminVersion:
     m_VersionCode: 1
     m_VersionName: 
-  luminPrivilege: []
   facebookSdkVersion: 7.9.4
   facebookAppId: 
   facebookCookies: 1
@@ -624,6 +646,6 @@ PlayerSettings:
   projectName: XReality
   organizationId: christian-nielsen
   cloudEnabled: 0
-  enableNativePlatformBackendsForNewInputSystem: 0
+  enableNativePlatformBackendsForNewInputSystem: 1
   disableOldInputManagerSupport: 0
   legacyClampBlendShapeWeights: 1
