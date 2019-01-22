@@ -1,11 +1,4 @@
-﻿//
-//  Outline.cs
-//  QuickOutline
-//
-//  Created by Chris Nolet on 3/30/18.
-//  Copyright © 2018 Chris Nolet. All rights reserved.
-//
-
+﻿
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -56,10 +49,10 @@ namespace SceneAssets.Common.Interaction.Scripts
     }
 
     [SerializeField]
-    private Mode outlineMode;
+    private Mode outlineMode =Mode.OutlineVisible;
 
     [SerializeField]
-    private Color outlineColor = Color.white;
+    private Color outlineColor = Color.green;
 
     [SerializeField, Range(0f, 10f)]
     private float outlineWidth = 2f;
@@ -82,7 +75,7 @@ namespace SceneAssets.Common.Interaction.Scripts
 
     private bool needsUpdate;
 
-    [SerializeField] private bool onlyDrawOnActivatorCollision =true;
+    [SerializeField] private bool onlyDrawOnActivatorCollision = true;
     [SerializeField] private Collider activator_collider;
     [SerializeField] private string activator_tag = "Grapper";
     [SerializeField] private bool should_be_activated;

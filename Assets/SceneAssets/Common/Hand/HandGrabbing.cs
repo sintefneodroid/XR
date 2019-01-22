@@ -19,8 +19,8 @@ namespace SceneAssets.Room.Scripts.Hand
 
         private Vector3 _lastFramePosition;
         [SerializeField]private Transform _currentGrabObject;
-        [SerializeField]private bool _isGrabbing;
-        [SerializeField] private bool m_shouldGrab;
+        private bool _isGrabbing;
+        private bool m_shouldGrab;
 
         public bool ShouldGrab
         {

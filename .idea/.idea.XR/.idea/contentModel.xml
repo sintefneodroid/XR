@@ -9,15 +9,6 @@
       <e p="Assets" t="Include">
         <e p="Exclude" t="Include">
           <e p="AssetBundles" t="Include">
-            <e p="Scripts" t="Include">
-              <e p="Device.cs" t="Include" />
-              <e p="FloatingObject.cs" t="Include" />
-              <e p="Grabbable.cs" t="Include" />
-              <e p="Grabber.cs" t="Include" />
-              <e p="MatrixExtension.cs" t="Include" />
-              <e p="NodeTracker.cs" t="Include" />
-              <e p="TargetLine.cs" t="Include" />
-            </e>
             <e p="VrTunnellingPro" t="Include">
               <e p="Editor" t="Include">
                 <e p="VrTunnellingMobileEditor.cs" t="Include" />
@@ -185,6 +176,17 @@
               </e>
             </e>
           </e>
+          <e p="Trash" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="Device.cs" t="Include" />
+              <e p="FloatingObject.cs" t="Include" />
+              <e p="Grabbable.cs" t="Include" />
+              <e p="Grabber.cs" t="Include" />
+              <e p="MatrixExtension.cs" t="Include" />
+              <e p="NodeTracker.cs" t="Include" />
+              <e p="TargetLine.cs" t="Include" />
+            </e>
+          </e>
         </e>
         <e p="SceneAssets" t="Include">
           <e p="BotLab" t="Include">
@@ -271,6 +273,12 @@
             </e>
           </e>
           <e p="Common" t="Include">
+            <e p="Hand" t="Include">
+              <e p="HandAnimation.cs" t="Include" />
+              <e p="HandGrabbing.cs" t="Include" />
+              <e p="HandInputWatcher.cs" t="Include" />
+              <e p="PickUpBehaviour.cs" t="Include" />
+            </e>
             <e p="Interaction" t="Include">
               <e p="Resources" t="Include">
                 <e p="Shaders" t="Include">
@@ -278,10 +286,8 @@
                   <e p="OutlineMask.shader" t="Include" />
                 </e>
               </e>
-              <e p="Scripts" t="Include">
-                <e p="ToggleOutline.cs" t="Include" />
-              </e>
               <e p="ThrowableObject.cs" t="Include" />
+              <e p="ToggleOutline.cs" t="Include" />
             </e>
             <e p="TeleOperation" t="Include">
               <e p="FrankaTeleOpReceiver.cs" t="Include" />
@@ -290,11 +296,6 @@
           </e>
           <e p="Room" t="Include">
             <e p="Scripts" t="Include">
-              <e p="Hand" t="Include">
-                <e p="HandAnimation.cs" t="Include" />
-                <e p="HandGrabbing.cs" t="Include" />
-                <e p="HandInputWatcher.cs" t="Include" />
-              </e>
               <e p="SeatedRig.cs" t="Include" />
               <e p="Teleport" t="Include">
                 <e p="LaserPointerTeleport.cs" t="Include" />
@@ -302,7 +303,6 @@
               <e p="Unused" t="Include">
                 <e p="ControllerGrabObject.cs" t="Include" />
                 <e p="EditorLikeCameraBehaviour.cs" t="Include" />
-                <e p="PickUpBehaviour.cs" t="Include" />
               </e>
             </e>
           </e>
