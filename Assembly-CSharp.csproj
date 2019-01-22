@@ -62,17 +62,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\AssetBundles\VrTunnellingPro\Examples\VRTP_ExampleMovement.cs" />
-    <Compile Include="Assets\AssetBundles\VrTunnellingPro\Scripts\Tunnelling.cs" />
-    <Compile Include="Assets\AssetBundles\VrTunnellingPro\Scripts\TunnellingBase.cs" />
-    <Compile Include="Assets\AssetBundles\VrTunnellingPro\Scripts\TunnellingImageBase.cs" />
-    <Compile Include="Assets\AssetBundles\VrTunnellingPro\Scripts\TunnellingMaskObject.cs" />
-    <Compile Include="Assets\AssetBundles\VrTunnellingPro\Scripts\TunnellingMaskObjectMobile.cs" />
-    <Compile Include="Assets\AssetBundles\VrTunnellingPro\Scripts\TunnellingMobile.cs" />
-    <Compile Include="Assets\AssetBundles\VrTunnellingPro\Scripts\TunnellingOpaque.cs" />
-    <Compile Include="Assets\AssetBundles\VrTunnellingPro\Scripts\TunnellingPreset.cs" />
-    <Compile Include="Assets\AssetBundles\VrTunnellingPro\Scripts\TunnellingPresetBase.cs" />
-    <Compile Include="Assets\AssetBundles\VrTunnellingPro\Scripts\TunnellingPresetMobile.cs" />
+    <Compile Include="Assets\Exclude\AssetBundles\VrTunnellingPro\Examples\VRTP_ExampleMovement.cs" />
+    <Compile Include="Assets\Exclude\AssetBundles\VrTunnellingPro\Scripts\Tunnelling.cs" />
+    <Compile Include="Assets\Exclude\AssetBundles\VrTunnellingPro\Scripts\TunnellingBase.cs" />
+    <Compile Include="Assets\Exclude\AssetBundles\VrTunnellingPro\Scripts\TunnellingImageBase.cs" />
+    <Compile Include="Assets\Exclude\AssetBundles\VrTunnellingPro\Scripts\TunnellingMaskObject.cs" />
+    <Compile Include="Assets\Exclude\AssetBundles\VrTunnellingPro\Scripts\TunnellingMaskObjectMobile.cs" />
+    <Compile Include="Assets\Exclude\AssetBundles\VrTunnellingPro\Scripts\TunnellingMobile.cs" />
+    <Compile Include="Assets\Exclude\AssetBundles\VrTunnellingPro\Scripts\TunnellingOpaque.cs" />
+    <Compile Include="Assets\Exclude\AssetBundles\VrTunnellingPro\Scripts\TunnellingPreset.cs" />
+    <Compile Include="Assets\Exclude\AssetBundles\VrTunnellingPro\Scripts\TunnellingPresetBase.cs" />
+    <Compile Include="Assets\Exclude\AssetBundles\VrTunnellingPro\Scripts\TunnellingPresetMobile.cs" />
     <Compile Include="Assets\Exclude\FishPickingPlant\BioIK\BioIK.cs" />
     <Compile Include="Assets\Exclude\FishPickingPlant\BioIK\Helpers\Enums.cs" />
     <Compile Include="Assets\Exclude\FishPickingPlant\BioIK\Helpers\Evolution.cs" />
@@ -104,9 +104,7 @@
     <Compile Include="Assets\Exclude\FishPickingPlant\Scripts\end_effector_target_controller.cs" />
     <Compile Include="Assets\Exclude\FishPickingPlant\Scripts\file_writer.cs" />
     <Compile Include="Assets\Exclude\FishPickingPlant\Scripts\finger_colliders.cs" />
-    <Compile Include="Assets\Exclude\FishPickingPlant\Scripts\franka_remote.cs" />
     <Compile Include="Assets\Exclude\FishPickingPlant\Scripts\franka_robot.cs" />
-    <Compile Include="Assets\Exclude\FishPickingPlant\Scripts\franka_tele_operated.cs" />
     <Compile Include="Assets\Exclude\FishPickingPlant\Scripts\fruit_activator.cs" />
     <Compile Include="Assets\Exclude\FishPickingPlant\Scripts\fruit_table.cs" />
     <Compile Include="Assets\Exclude\FishPickingPlant\Scripts\grasp_target_logic.cs" />
@@ -118,6 +116,13 @@
     <Compile Include="Assets\Exclude\FishPickingPlant\Scripts\SoundPlayer.cs" />
     <Compile Include="Assets\Exclude\FishPickingPlant\Scripts\VR scripts\ViveController.cs" />
     <Compile Include="Assets\Exclude\FishPickingPlant\Sild\ColliderControll.cs" />
+    <Compile Include="Assets\Exclude\Trash\Scripts\Device.cs" />
+    <Compile Include="Assets\Exclude\Trash\Scripts\FloatingObject.cs" />
+    <Compile Include="Assets\Exclude\Trash\Scripts\Grabbable.cs" />
+    <Compile Include="Assets\Exclude\Trash\Scripts\Grabber.cs" />
+    <Compile Include="Assets\Exclude\Trash\Scripts\MatrixExtension.cs" />
+    <Compile Include="Assets\Exclude\Trash\Scripts\NodeTracker.cs" />
+    <Compile Include="Assets\Exclude\Trash\Scripts\TargetLine.cs" />
     <Compile Include="Assets\SceneAssets\BotLab\Standard Assets\Characters\FirstPersonCharacter\Scripts\FirstPersonController.cs" />
     <Compile Include="Assets\SceneAssets\BotLab\Standard Assets\Characters\FirstPersonCharacter\Scripts\MouseLook.cs" />
     <Compile Include="Assets\SceneAssets\BotLab\Standard Assets\Characters\FirstPersonCharacter\Scripts\RigidbodyFirstPersonController.cs" />
@@ -152,7 +157,9 @@
     <Compile Include="Assets\SceneAssets\BotLab\Standard Assets\Utility\WaypointCircuit.cs" />
     <Compile Include="Assets\SceneAssets\BotLab\Standard Assets\Utility\WaypointProgressTracker.cs" />
     <Compile Include="Assets\SceneAssets\Common\Interaction\Scripts\ToggleOutline.cs" />
-    <Compile Include="Assets\SceneAssets\Common\Interaction\StickyThrowableObject.cs" />
+    <Compile Include="Assets\SceneAssets\Common\Interaction\ThrowableObject.cs" />
+    <Compile Include="Assets\SceneAssets\Common\TeleOperation\FrankaTeleOpReceiver.cs" />
+    <Compile Include="Assets\SceneAssets\Common\TeleOperation\FrankaTeleOpRemote.cs" />
     <Compile Include="Assets\SceneAssets\Room\Scripts\Hand\HandAnimation.cs" />
     <Compile Include="Assets\SceneAssets\Room\Scripts\Hand\HandGrabbing.cs" />
     <Compile Include="Assets\SceneAssets\Room\Scripts\Hand\HandInputWatcher.cs" />
@@ -162,9 +169,9 @@
     <Compile Include="Assets\SceneAssets\Room\Scripts\Unused\EditorLikeCameraBehaviour.cs" />
     <Compile Include="Assets\SceneAssets\Room\Scripts\Unused\PickUpBehaviour.cs" />
     <None Include="Assets\SceneAssets\BotLab\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
-    <None Include="Assets\AssetBundles\VrTunnellingPro\Resources\Shaders\Window.shader" />
+    <None Include="Assets\Exclude\AssetBundles\VrTunnellingPro\Resources\Shaders\Window.shader" />
     <None Include="Assets\SceneAssets\BotLab\Standard Assets\Effects\ToonShading\Shaders\ToonBasic.shader" />
-    <None Include="Assets\AssetBundles\VrTunnellingPro\Shaders\CageOpaqueFog.shader" />
+    <None Include="Assets\Exclude\AssetBundles\VrTunnellingPro\Shaders\CageOpaqueFog.shader" />
     <None Include="Assets\Exclude\FishPickingPlant\GameData\RottenBanana.txt" />
     <None Include="Assets\Exclude\FishPickingPlant\GameData\fish_collider_5.txt" />
     <None Include="Assets\Exclude\FishPickingPlant\GameData\backup\banana.txt" />
@@ -174,49 +181,49 @@
     <None Include="Assets\Exclude\FishPickingPlant\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\DepthOfFieldScatter.shader" />
     <None Include="Assets\SceneAssets\BotLab\Standard Assets\Effects\TessellationShaders\Shaders\BumpedSpecularSmooth.shader" />
     <None Include="Assets\SceneAssets\BotLab\Standard Assets\Effects\Projectors\Guidelines.txt" />
-    <None Include="Assets\AssetBundles\VrTunnellingPro\Shaders\CageFog.cginc" />
+    <None Include="Assets\Exclude\AssetBundles\VrTunnellingPro\Shaders\CageFog.cginc" />
     <None Include="Assets\Exclude\FishPickingPlant\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\MobileBloom.shader" />
-    <None Include="Assets\AssetBundles\VrTunnellingPro\Resources\Shaders\BlitA.shader" />
+    <None Include="Assets\Exclude\AssetBundles\VrTunnellingPro\Resources\Shaders\BlitA.shader" />
     <None Include="Assets\Exclude\FishPickingPlant\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\DepthOfFieldDX11.shader" />
     <None Include="Assets\Exclude\FishPickingPlant\ModularConveyorTools\Shaders\Conveyor.shader" />
     <None Include="Assets\SceneAssets\BotLab\Standard Assets\Effects\ImageEffects\Readme.txt" />
-    <None Include="Assets\AssetBundles\VrTunnellingPro\Resources\Shaders\Skybox.shader" />
-    <None Include="Assets\AssetBundles\VrTunnellingPro\Shaders\DoubleSided.shader" />
+    <None Include="Assets\Exclude\AssetBundles\VrTunnellingPro\Resources\Shaders\Skybox.shader" />
+    <None Include="Assets\Exclude\AssetBundles\VrTunnellingPro\Shaders\DoubleSided.shader" />
     <None Include="Assets\Exclude\FishPickingPlant\GameData\banana.txt" />
     <None Include="Assets\Exclude\FishPickingPlant\GameData\fish_collider_7.txt" />
-    <None Include="Assets\AssetBundles\VrTunnellingPro\Resources\Shaders\TunnellingUtils.cginc" />
+    <None Include="Assets\Exclude\AssetBundles\VrTunnellingPro\Resources\Shaders\TunnellingUtils.cginc" />
     <None Include="Assets\Exclude\FishPickingPlant\GameData\fish_collider_4.txt" />
-    <None Include="Assets\AssetBundles\VrTunnellingPro\Shaders\CageTransparentFog.shader" />
+    <None Include="Assets\Exclude\AssetBundles\VrTunnellingPro\Shaders\CageTransparentFog.shader" />
     <None Include="Assets\Exclude\FishPickingPlant\GameData\fish_collider_6.txt" />
     <None Include="Assets\Exclude\FishPickingPlant\GameData\RottenPear.txt" />
-    <None Include="Assets\AssetBundles\VrTunnellingPro\Shaders\CageTransparent.shader" />
+    <None Include="Assets\Exclude\AssetBundles\VrTunnellingPro\Shaders\CageTransparent.shader" />
     <None Include="Assets\Exclude\FishPickingPlant\GameData\rotten_pear.txt" />
     <None Include="Assets\SceneAssets\BotLab\Standard Assets\Effects\ToonShading\Shaders\ToonBasicOutline.shader" />
-    <None Include="Assets\AssetBundles\VrTunnellingPro\Shaders\CageCommon.cginc" />
-    <None Include="Assets\AssetBundles\VrTunnellingPro\Resources\Shaders\Tunnelling.shader" />
+    <None Include="Assets\Exclude\AssetBundles\VrTunnellingPro\Shaders\CageCommon.cginc" />
+    <None Include="Assets\Exclude\AssetBundles\VrTunnellingPro\Resources\Shaders\Tunnelling.shader" />
     <None Include="Assets\Exclude\FishPickingPlant\GameData\rotten_apple.txt" />
     <None Include="Assets\Exclude\FishPickingPlant\GameData\rotten_banana.txt" />
     <None Include="Assets\Exclude\FishPickingPlant\GameData\mackerel_collider_4.txt" />
-    <None Include="Assets\AssetBundles\VrTunnellingPro\Shaders\CageOpaque.shader" />
-    <None Include="Assets\AssetBundles\VrTunnellingPro\Resources\Shaders\TunnellingVertexUtils.cginc" />
+    <None Include="Assets\Exclude\AssetBundles\VrTunnellingPro\Shaders\CageOpaque.shader" />
+    <None Include="Assets\Exclude\AssetBundles\VrTunnellingPro\Resources\Shaders\TunnellingVertexUtils.cginc" />
     <None Include="Assets\SceneAssets\BotLab\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
-    <None Include="Assets\AssetBundles\VrTunnellingPro\Resources\Shaders\TunnellingVertex.shader" />
+    <None Include="Assets\Exclude\AssetBundles\VrTunnellingPro\Resources\Shaders\TunnellingVertex.shader" />
     <None Include="Assets\SceneAssets\BotLab\Standard Assets\Effects\ToonShading\Shaders\ToonLitOutline.shader" />
     <None Include="Assets\SceneAssets\BotLab\Standard Assets\Effects\ToonShading\Shaders\ToonLit.shader" />
     <None Include="Assets\Exclude\FishPickingPlant\GameData\fish_collider_2.txt" />
     <None Include="Assets\SceneAssets\BotLab\Standard Assets\Effects\Projectors\Shaders\ProjectorLight.shader" />
     <None Include="Assets\Exclude\FishPickingPlant\GameData\apple.txt" />
-    <None Include="Assets\AssetBundles\VrTunnellingPro\Resources\Shaders\Skysphere.shader" />
+    <None Include="Assets\Exclude\AssetBundles\VrTunnellingPro\Resources\Shaders\Skysphere.shader" />
     <None Include="Assets\Exclude\FishPickingPlant\GameData\pear.txt" />
     <None Include="Assets\Exclude\FishPickingPlant\GameData\backup\apple.txt" />
     <None Include="Assets\Exclude\FishPickingPlant\GameData\fish_collider_3.txt" />
     <None Include="Assets\SceneAssets\Common\Interaction\Resources\Shaders\OutlineMask.shader" />
     <None Include="Assets\SceneAssets\BotLab\Standard Assets\Effects\Projectors\Shaders\ProjectorMultiply.shader" />
-    <None Include="Assets\AssetBundles\VrTunnellingPro\Resources\Shaders\Mask.shader" />
-    <None Include="Assets\AssetBundles\VrTunnellingPro\Resources\Shaders\TunnellingStencil.shader" />
+    <None Include="Assets\Exclude\AssetBundles\VrTunnellingPro\Resources\Shaders\Mask.shader" />
+    <None Include="Assets\Exclude\AssetBundles\VrTunnellingPro\Resources\Shaders\TunnellingStencil.shader" />
     <None Include="Assets\SceneAssets\BotLab\Standard Assets\Effects\TessellationShaders\Shaders\BumpedSpecularDisplacement.shader" />
     <None Include="Assets\Exclude\FishPickingPlant\GameData\mackerel_collider_2.txt" />
-    <None Include="Assets\AssetBundles\VrTunnellingPro\Resources\Shaders\SeparableBlur.shader" />
+    <None Include="Assets\Exclude\AssetBundles\VrTunnellingPro\Resources\Shaders\SeparableBlur.shader" />
     <None Include="Assets\Exclude\FishPickingPlant\GameData\RottenApple.txt" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/marol/Documents/Christian/Projects/XR/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
@@ -224,14 +231,14 @@
     <Reference Include="Neodroid.Editor">
       <HintPath>C:/Users/marol/Documents/Christian/Projects/XR/Library/ScriptAssemblies/Neodroid.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.ProBuilder.AddOns.Editor">
-      <HintPath>C:/Users/marol/Documents/Christian/Projects/XR/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.ProGrids">
       <HintPath>C:/Users/marol/Documents/Christian/Projects/XR/Library/ScriptAssemblies/Unity.ProGrids.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InputSystem">
       <HintPath>C:/Users/marol/Documents/Christian/Projects/XR/Library/ScriptAssemblies/Unity.InputSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
+      <HintPath>C:/Users/marol/Documents/Christian/Projects/XR/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProGrids.Editor">
       <HintPath>C:/Users/marol/Documents/Christian/Projects/XR/Library/ScriptAssemblies/Unity.ProGrids.Editor.dll</HintPath>
@@ -265,6 +272,9 @@
     </Reference>
     <Reference Include="UnityEngine.SpatialTracking">
       <HintPath>C:/Users/marol/Documents/Christian/Projects/XR/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder.AddOns.Editor">
+      <HintPath>C:/Users/marol/Documents/Christian/Projects/XR/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>C:/Users/marol/Documents/Christian/Projects/XR/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
@@ -469,21 +479,6 @@
     </Reference>
     <Reference Include="Priority Queue">
       <HintPath>C:/Users/marol/Documents/Christian/Projects/XR/Library/PackageCache/com.neodroid.droid@f71fd3943a8b2fc95caedfe3782cb5d06447acef/Libaries/OptimizedPriorityQueue.4.1.1/lib/net45/Priority Queue.dll</HintPath>
-    </Reference>
-    <Reference Include="ProBuilderCore">
-      <HintPath>C:/Users/marol/Documents/Christian/Projects/XR/Library/PackageCache/com.unity.probuilder@3.0.9/ProBuilder/Classes/ProBuilderCore.dll</HintPath>
-    </Reference>
-    <Reference Include="ProBuilderMeshOps">
-      <HintPath>C:/Users/marol/Documents/Christian/Projects/XR/Library/PackageCache/com.unity.probuilder@3.0.9/ProBuilder/Classes/ProBuilderMeshOps.dll</HintPath>
-    </Reference>
-    <Reference Include="KdTreeLib">
-      <HintPath>C:/Users/marol/Documents/Christian/Projects/XR/Library/PackageCache/com.unity.probuilder@3.0.9/ProBuilder/Classes/ClassesLib/KdTreeLib.dll</HintPath>
-    </Reference>
-    <Reference Include="pb_Stl">
-      <HintPath>C:/Users/marol/Documents/Christian/Projects/XR/Library/PackageCache/com.unity.probuilder@3.0.9/ProBuilder/Classes/ClassesLib/pb_Stl.dll</HintPath>
-    </Reference>
-    <Reference Include="Poly2Tri">
-      <HintPath>C:/Users/marol/Documents/Christian/Projects/XR/Library/PackageCache/com.unity.probuilder@3.0.9/ProBuilder/Classes/ClassesLib/Poly2Tri.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.1.0a14/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>

@@ -62,13 +62,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\AssetBundles\VrTunnellingPro\Editor\VrTunnellingMobileEditor.cs" />
-    <Compile Include="Assets\AssetBundles\VrTunnellingPro\Editor\VrTunnellingProEditorBase.cs" />
-    <Compile Include="Assets\AssetBundles\VrTunnellingPro\Editor\VrTunnellingProEditorUtils.cs" />
-    <Compile Include="Assets\AssetBundles\VrTunnellingPro\Editor\VrTunnellingProImageEditor.cs" />
-    <Compile Include="Assets\AssetBundles\VrTunnellingPro\Editor\VrTunnellingProPresetEditor.cs" />
-    <Compile Include="Assets\AssetBundles\VrTunnellingPro\Editor\VrTunnellingProPresetEditorBase.cs" />
-    <Compile Include="Assets\AssetBundles\VrTunnellingPro\Editor\VrTunnellingProPresetMobileEditor.cs" />
+    <Compile Include="Assets\Exclude\AssetBundles\VrTunnellingPro\Editor\VrTunnellingMobileEditor.cs" />
+    <Compile Include="Assets\Exclude\AssetBundles\VrTunnellingPro\Editor\VrTunnellingProEditorBase.cs" />
+    <Compile Include="Assets\Exclude\AssetBundles\VrTunnellingPro\Editor\VrTunnellingProEditorUtils.cs" />
+    <Compile Include="Assets\Exclude\AssetBundles\VrTunnellingPro\Editor\VrTunnellingProImageEditor.cs" />
+    <Compile Include="Assets\Exclude\AssetBundles\VrTunnellingPro\Editor\VrTunnellingProPresetEditor.cs" />
+    <Compile Include="Assets\Exclude\AssetBundles\VrTunnellingPro\Editor\VrTunnellingProPresetEditorBase.cs" />
+    <Compile Include="Assets\Exclude\AssetBundles\VrTunnellingPro\Editor\VrTunnellingProPresetMobileEditor.cs" />
     <Compile Include="Assets\Exclude\FishPickingPlant\BioIK\Editor\BioIKEditor.cs" />
     <Compile Include="Assets\Exclude\FishPickingPlant\ModularConveyorTools\Editor\ExtrudeWizardEditor.cs" />
     <Compile Include="Assets\Exclude\FishPickingPlant\ModularConveyorTools\Editor\LinearConveyorEditor.cs" />
@@ -79,14 +79,14 @@
     <Reference Include="Neodroid.Editor">
       <HintPath>C:/Users/marol/Documents/Christian/Projects/XR/Library/ScriptAssemblies/Neodroid.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.ProBuilder.AddOns.Editor">
-      <HintPath>C:/Users/marol/Documents/Christian/Projects/XR/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.ProGrids">
       <HintPath>C:/Users/marol/Documents/Christian/Projects/XR/Library/ScriptAssemblies/Unity.ProGrids.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InputSystem">
       <HintPath>C:/Users/marol/Documents/Christian/Projects/XR/Library/ScriptAssemblies/Unity.InputSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
+      <HintPath>C:/Users/marol/Documents/Christian/Projects/XR/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProGrids.Editor">
       <HintPath>C:/Users/marol/Documents/Christian/Projects/XR/Library/ScriptAssemblies/Unity.ProGrids.Editor.dll</HintPath>
@@ -120,6 +120,9 @@
     </Reference>
     <Reference Include="UnityEngine.SpatialTracking">
       <HintPath>C:/Users/marol/Documents/Christian/Projects/XR/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder.AddOns.Editor">
+      <HintPath>C:/Users/marol/Documents/Christian/Projects/XR/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>C:/Users/marol/Documents/Christian/Projects/XR/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
@@ -348,27 +351,6 @@
     </Reference>
     <Reference Include="Priority Queue">
       <HintPath>C:/Users/marol/Documents/Christian/Projects/XR/Library/PackageCache/com.neodroid.droid@f71fd3943a8b2fc95caedfe3782cb5d06447acef/Libaries/OptimizedPriorityQueue.4.1.1/lib/net45/Priority Queue.dll</HintPath>
-    </Reference>
-    <Reference Include="AssetIdRemapUtility">
-      <HintPath>C:/Users/marol/Documents/Christian/Projects/XR/Library/PackageCache/com.unity.probuilder@3.0.9/ProBuilder/AssetIdRemapUtility/Editor/AssetIdRemapUtility.dll</HintPath>
-    </Reference>
-    <Reference Include="ProBuilderCore">
-      <HintPath>C:/Users/marol/Documents/Christian/Projects/XR/Library/PackageCache/com.unity.probuilder@3.0.9/ProBuilder/Classes/ProBuilderCore.dll</HintPath>
-    </Reference>
-    <Reference Include="ProBuilderMeshOps">
-      <HintPath>C:/Users/marol/Documents/Christian/Projects/XR/Library/PackageCache/com.unity.probuilder@3.0.9/ProBuilder/Classes/ProBuilderMeshOps.dll</HintPath>
-    </Reference>
-    <Reference Include="KdTreeLib">
-      <HintPath>C:/Users/marol/Documents/Christian/Projects/XR/Library/PackageCache/com.unity.probuilder@3.0.9/ProBuilder/Classes/ClassesLib/KdTreeLib.dll</HintPath>
-    </Reference>
-    <Reference Include="pb_Stl">
-      <HintPath>C:/Users/marol/Documents/Christian/Projects/XR/Library/PackageCache/com.unity.probuilder@3.0.9/ProBuilder/Classes/ClassesLib/pb_Stl.dll</HintPath>
-    </Reference>
-    <Reference Include="Poly2Tri">
-      <HintPath>C:/Users/marol/Documents/Christian/Projects/XR/Library/PackageCache/com.unity.probuilder@3.0.9/ProBuilder/Classes/ClassesLib/Poly2Tri.dll</HintPath>
-    </Reference>
-    <Reference Include="ProBuilderEditor">
-      <HintPath>C:/Users/marol/Documents/Christian/Projects/XR/Library/PackageCache/com.unity.probuilder@3.0.9/ProBuilder/Editor/ProBuilderEditor.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.1.0a14/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>

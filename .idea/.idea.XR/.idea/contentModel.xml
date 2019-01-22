@@ -7,170 +7,179 @@
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="AssetBundles" t="Include">
-          <e p="VrTunnellingPro" t="Include">
-            <e p="Editor" t="Include">
-              <e p="VrTunnellingMobileEditor.cs" t="Include" />
-              <e p="VrTunnellingProEditorBase.cs" t="Include" />
-              <e p="VrTunnellingProEditorUtils.cs" t="Include" />
-              <e p="VrTunnellingProImageEditor.cs" t="Include" />
-              <e p="VrTunnellingProPresetEditor.cs" t="Include" />
-              <e p="VrTunnellingProPresetEditorBase.cs" t="Include" />
-              <e p="VrTunnellingProPresetMobileEditor.cs" t="Include" />
-            </e>
-            <e p="Examples" t="Include">
-              <e p="VRTP_ExampleMovement.cs" t="Include" />
-            </e>
-            <e p="Resources" t="Include">
-              <e p="Shaders" t="Include">
-                <e p="BlitA.shader" t="Include" />
-                <e p="Mask.shader" t="Include" />
-                <e p="SeparableBlur.shader" t="Include" />
-                <e p="Skybox.shader" t="Include" />
-                <e p="Skysphere.shader" t="Include" />
-                <e p="Tunnelling.shader" t="Include" />
-                <e p="TunnellingStencil.shader" t="Include" />
-                <e p="TunnellingUtils.cginc" t="Include" />
-                <e p="TunnellingVertex.shader" t="Include" />
-                <e p="TunnellingVertexUtils.cginc" t="Include" />
-                <e p="Window.shader" t="Include" />
-              </e>
-            </e>
+        <e p="Exclude" t="Include">
+          <e p="AssetBundles" t="Include">
             <e p="Scripts" t="Include">
-              <e p="Tunnelling.cs" t="Include" />
-              <e p="TunnellingBase.cs" t="Include" />
-              <e p="TunnellingImageBase.cs" t="Include" />
-              <e p="TunnellingMaskObject.cs" t="Include" />
-              <e p="TunnellingMaskObjectMobile.cs" t="Include" />
-              <e p="TunnellingMobile.cs" t="Include" />
-              <e p="TunnellingOpaque.cs" t="Include" />
-              <e p="TunnellingPreset.cs" t="Include" />
-              <e p="TunnellingPresetBase.cs" t="Include" />
-              <e p="TunnellingPresetMobile.cs" t="Include" />
+              <e p="Device.cs" t="Include" />
+              <e p="FloatingObject.cs" t="Include" />
+              <e p="Grabbable.cs" t="Include" />
+              <e p="Grabber.cs" t="Include" />
+              <e p="MatrixExtension.cs" t="Include" />
+              <e p="NodeTracker.cs" t="Include" />
+              <e p="TargetLine.cs" t="Include" />
             </e>
-            <e p="Shaders" t="Include">
-              <e p="CageCommon.cginc" t="Include" />
-              <e p="CageFog.cginc" t="Include" />
-              <e p="CageOpaque.shader" t="Include" />
-              <e p="CageOpaqueFog.shader" t="Include" />
-              <e p="CageTransparent.shader" t="Include" />
-              <e p="CageTransparentFog.shader" t="Include" />
-              <e p="DoubleSided.shader" t="Include" />
-            </e>
-          </e>
-        </e>
-        <e p="FishPickingPlant" t="Include">
-          <e p="BioIK" t="Include">
-            <e p="BioIK.cs" t="Include" />
-            <e p="Editor" t="Include">
-              <e p="BioIKEditor.cs" t="Include" />
-            </e>
-            <e p="Helpers" t="Include">
-              <e p="Enums.cs" t="Include" />
-              <e p="Evolution.cs" t="Include" />
-              <e p="Model.cs" t="Include" />
-              <e p="Utility.cs" t="Include" />
-            </e>
-            <e p="Setup" t="Include">
-              <e p="BioJoint.cs" t="Include" />
-              <e p="BioObjective.cs" t="Include" />
-              <e p="BioSegment.cs" t="Include" />
-              <e p="Objectives" t="Include">
-                <e p="Displacement.cs" t="Include" />
-                <e p="Distance.cs" t="Include" />
-                <e p="JointValue.cs" t="Include" />
-                <e p="LookAt.cs" t="Include" />
-                <e p="Orientation.cs" t="Include" />
-                <e p="Position.cs" t="Include" />
-                <e p="Projection.cs" t="Include" />
+            <e p="VrTunnellingPro" t="Include">
+              <e p="Editor" t="Include">
+                <e p="VrTunnellingMobileEditor.cs" t="Include" />
+                <e p="VrTunnellingProEditorBase.cs" t="Include" />
+                <e p="VrTunnellingProEditorUtils.cs" t="Include" />
+                <e p="VrTunnellingProImageEditor.cs" t="Include" />
+                <e p="VrTunnellingProPresetEditor.cs" t="Include" />
+                <e p="VrTunnellingProPresetEditorBase.cs" t="Include" />
+                <e p="VrTunnellingProPresetMobileEditor.cs" t="Include" />
               </e>
-            </e>
-          </e>
-          <e p="GameData" t="Include">
-            <e p="apple.txt" t="Include" />
-            <e p="backup" t="Include">
-              <e p="apple.txt" t="Include" />
-              <e p="banana.txt" t="Include" />
-              <e p="pear.txt" t="Include" />
-            </e>
-            <e p="banana.txt" t="Include" />
-            <e p="fish_collider_2.txt" t="Include" />
-            <e p="fish_collider_3.txt" t="Include" />
-            <e p="fish_collider_4.txt" t="Include" />
-            <e p="fish_collider_5.txt" t="Include" />
-            <e p="fish_collider_6.txt" t="Include" />
-            <e p="fish_collider_7.txt" t="Include" />
-            <e p="mackerel_collider_2.txt" t="Include" />
-            <e p="mackerel_collider_3.txt" t="Include" />
-            <e p="mackerel_collider_4.txt" t="Include" />
-            <e p="pear.txt" t="Include" />
-            <e p="rotten_apple.txt" t="Include" />
-            <e p="rotten_banana.txt" t="Include" />
-            <e p="rotten_pear.txt" t="Include" />
-            <e p="RottenApple.txt" t="Include" />
-            <e p="RottenBanana.txt" t="Include" />
-            <e p="RottenPear.txt" t="Include" />
-          </e>
-          <e p="ModularConveyorTools" t="Include">
-            <e p="Editor" t="Include">
-              <e p="ExtrudeWizardEditor.cs" t="Include" />
-              <e p="LinearConveyorEditor.cs" t="Include" />
-              <e p="RadialConveyorEditor.cs" t="Include" />
-            </e>
-            <e p="Scripts" t="Include">
-              <e p="ExtrudeConveyorWizard.cs" t="Include" />
-              <e p="ExtrudedConveyor.cs" t="Include" />
-              <e p="LinearConveyor.cs" t="Include" />
-              <e p="RadialConveyor.cs" t="Include" />
-              <e p="Roller.cs" t="Include" />
-            </e>
-            <e p="Shaders" t="Include">
-              <e p="Conveyor.shader" t="Include" />
-            </e>
-          </e>
-          <e p="PickableObjects" t="Include">
-            <e p="PickableObject.cs" t="Include" />
-          </e>
-          <e p="Scripts" t="Include">
-            <e p="apple.cs" t="Include" />
-            <e p="collision_logger.cs" t="Include" />
-            <e p="controller_menu_button.cs" t="Include" />
-            <e p="ConveyorSpeedController.cs" t="Include" />
-            <e p="ConveyorTrigger.cs" t="Include" />
-            <e p="destroyer_cube.cs" t="Include" />
-            <e p="end_effector_finger_controller.cs" t="Include" />
-            <e p="end_effector_target_controller.cs" t="Include" />
-            <e p="file_writer.cs" t="Include" />
-            <e p="finger_colliders.cs" t="Include" />
-            <e p="franka_remote.cs" t="Include" />
-            <e p="franka_robot.cs" t="Include" />
-            <e p="franka_tele_operated.cs" t="Include" />
-            <e p="fruit_activator.cs" t="Include" />
-            <e p="fruit_table.cs" t="Include" />
-            <e p="grasp_target_logic.cs" t="Include" />
-            <e p="graspable_object.cs" t="Include" />
-            <e p="main_manager.cs" t="Include" />
-            <e p="object_instatiator.cs" t="Include" />
-            <e p="path_creator.cs" t="Include" />
-            <e p="scene_manager.cs" t="Include" />
-            <e p="SoundPlayer.cs" t="Include" />
-            <e p="VR scripts" t="Include">
-              <e p="ViveController.cs" t="Include" />
-            </e>
-          </e>
-          <e p="Sild" t="Include">
-            <e p="ColliderControll.cs" t="Include" />
-          </e>
-          <e p="Standard Assets" t="Include">
-            <e p="Effects" t="Include">
-              <e p="ImageEffects" t="Include">
+              <e p="Examples" t="Include">
+                <e p="VRTP_ExampleMovement.cs" t="Include" />
+              </e>
+              <e p="Resources" t="Include">
                 <e p="Shaders" t="Include">
-                  <e p="_BloomAndFlares" t="Include">
-                    <e p="MobileBloom.shader" t="Include" />
-                  </e>
-                  <e p="_DepthOfField" t="Include">
-                    <e p="DepthOfFieldDX11.shader" t="Include" />
-                    <e p="DepthOfFieldScatter.shader" t="Include" />
+                  <e p="BlitA.shader" t="Include" />
+                  <e p="Mask.shader" t="Include" />
+                  <e p="SeparableBlur.shader" t="Include" />
+                  <e p="Skybox.shader" t="Include" />
+                  <e p="Skysphere.shader" t="Include" />
+                  <e p="Tunnelling.shader" t="Include" />
+                  <e p="TunnellingStencil.shader" t="Include" />
+                  <e p="TunnellingUtils.cginc" t="Include" />
+                  <e p="TunnellingVertex.shader" t="Include" />
+                  <e p="TunnellingVertexUtils.cginc" t="Include" />
+                  <e p="Window.shader" t="Include" />
+                </e>
+              </e>
+              <e p="Scripts" t="Include">
+                <e p="Tunnelling.cs" t="Include" />
+                <e p="TunnellingBase.cs" t="Include" />
+                <e p="TunnellingImageBase.cs" t="Include" />
+                <e p="TunnellingMaskObject.cs" t="Include" />
+                <e p="TunnellingMaskObjectMobile.cs" t="Include" />
+                <e p="TunnellingMobile.cs" t="Include" />
+                <e p="TunnellingOpaque.cs" t="Include" />
+                <e p="TunnellingPreset.cs" t="Include" />
+                <e p="TunnellingPresetBase.cs" t="Include" />
+                <e p="TunnellingPresetMobile.cs" t="Include" />
+              </e>
+              <e p="Shaders" t="Include">
+                <e p="CageCommon.cginc" t="Include" />
+                <e p="CageFog.cginc" t="Include" />
+                <e p="CageOpaque.shader" t="Include" />
+                <e p="CageOpaqueFog.shader" t="Include" />
+                <e p="CageTransparent.shader" t="Include" />
+                <e p="CageTransparentFog.shader" t="Include" />
+                <e p="DoubleSided.shader" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="FishPickingPlant" t="Include">
+            <e p="BioIK" t="Include">
+              <e p="BioIK.cs" t="Include" />
+              <e p="Editor" t="Include">
+                <e p="BioIKEditor.cs" t="Include" />
+              </e>
+              <e p="Helpers" t="Include">
+                <e p="Enums.cs" t="Include" />
+                <e p="Evolution.cs" t="Include" />
+                <e p="Model.cs" t="Include" />
+                <e p="Utility.cs" t="Include" />
+              </e>
+              <e p="Setup" t="Include">
+                <e p="BioJoint.cs" t="Include" />
+                <e p="BioObjective.cs" t="Include" />
+                <e p="BioSegment.cs" t="Include" />
+                <e p="Objectives" t="Include">
+                  <e p="Displacement.cs" t="Include" />
+                  <e p="Distance.cs" t="Include" />
+                  <e p="JointValue.cs" t="Include" />
+                  <e p="LookAt.cs" t="Include" />
+                  <e p="Orientation.cs" t="Include" />
+                  <e p="Position.cs" t="Include" />
+                  <e p="Projection.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="GameData" t="Include">
+              <e p="apple.txt" t="Include" />
+              <e p="backup" t="Include">
+                <e p="apple.txt" t="Include" />
+                <e p="banana.txt" t="Include" />
+                <e p="pear.txt" t="Include" />
+              </e>
+              <e p="banana.txt" t="Include" />
+              <e p="fish_collider_2.txt" t="Include" />
+              <e p="fish_collider_3.txt" t="Include" />
+              <e p="fish_collider_4.txt" t="Include" />
+              <e p="fish_collider_5.txt" t="Include" />
+              <e p="fish_collider_6.txt" t="Include" />
+              <e p="fish_collider_7.txt" t="Include" />
+              <e p="mackerel_collider_2.txt" t="Include" />
+              <e p="mackerel_collider_3.txt" t="Include" />
+              <e p="mackerel_collider_4.txt" t="Include" />
+              <e p="pear.txt" t="Include" />
+              <e p="rotten_apple.txt" t="Include" />
+              <e p="rotten_banana.txt" t="Include" />
+              <e p="rotten_pear.txt" t="Include" />
+              <e p="RottenApple.txt" t="Include" />
+              <e p="RottenBanana.txt" t="Include" />
+              <e p="RottenPear.txt" t="Include" />
+            </e>
+            <e p="ModularConveyorTools" t="Include">
+              <e p="Editor" t="Include">
+                <e p="ExtrudeWizardEditor.cs" t="Include" />
+                <e p="LinearConveyorEditor.cs" t="Include" />
+                <e p="RadialConveyorEditor.cs" t="Include" />
+              </e>
+              <e p="Scripts" t="Include">
+                <e p="ExtrudeConveyorWizard.cs" t="Include" />
+                <e p="ExtrudedConveyor.cs" t="Include" />
+                <e p="LinearConveyor.cs" t="Include" />
+                <e p="RadialConveyor.cs" t="Include" />
+                <e p="Roller.cs" t="Include" />
+              </e>
+              <e p="Shaders" t="Include">
+                <e p="Conveyor.shader" t="Include" />
+              </e>
+            </e>
+            <e p="PickableObjects" t="Include">
+              <e p="PickableObject.cs" t="Include" />
+            </e>
+            <e p="Scripts" t="Include">
+              <e p="apple.cs" t="Include" />
+              <e p="collision_logger.cs" t="Include" />
+              <e p="controller_menu_button.cs" t="Include" />
+              <e p="ConveyorSpeedController.cs" t="Include" />
+              <e p="ConveyorTrigger.cs" t="Include" />
+              <e p="destroyer_cube.cs" t="Include" />
+              <e p="end_effector_finger_controller.cs" t="Include" />
+              <e p="end_effector_target_controller.cs" t="Include" />
+              <e p="file_writer.cs" t="Include" />
+              <e p="finger_colliders.cs" t="Include" />
+              <e p="franka_robot.cs" t="Include" />
+              <e p="fruit_activator.cs" t="Include" />
+              <e p="fruit_table.cs" t="Include" />
+              <e p="grasp_target_logic.cs" t="Include" />
+              <e p="graspable_object.cs" t="Include" />
+              <e p="main_manager.cs" t="Include" />
+              <e p="object_instatiator.cs" t="Include" />
+              <e p="path_creator.cs" t="Include" />
+              <e p="scene_manager.cs" t="Include" />
+              <e p="SoundPlayer.cs" t="Include" />
+              <e p="VR scripts" t="Include">
+                <e p="ViveController.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Sild" t="Include">
+              <e p="ColliderControll.cs" t="Include" />
+            </e>
+            <e p="Standard Assets" t="Include">
+              <e p="Effects" t="Include">
+                <e p="ImageEffects" t="Include">
+                  <e p="Shaders" t="Include">
+                    <e p="_BloomAndFlares" t="Include">
+                      <e p="MobileBloom.shader" t="Include" />
+                    </e>
+                    <e p="_DepthOfField" t="Include">
+                      <e p="DepthOfFieldDX11.shader" t="Include" />
+                      <e p="DepthOfFieldScatter.shader" t="Include" />
+                    </e>
                   </e>
                 </e>
               </e>
@@ -272,7 +281,11 @@
               <e p="Scripts" t="Include">
                 <e p="ToggleOutline.cs" t="Include" />
               </e>
-              <e p="StickyThrowableObject.cs" t="Include" />
+              <e p="ThrowableObject.cs" t="Include" />
+            </e>
+            <e p="TeleOperation" t="Include">
+              <e p="FrankaTeleOpReceiver.cs" t="Include" />
+              <e p="FrankaTeleOpRemote.cs" t="Include" />
             </e>
           </e>
           <e p="Room" t="Include">
@@ -298,7 +311,9 @@
       <e p="Library" t="ExcludeRecursive" />
       <e p="obj" t="ExcludeRecursive" />
       <e p="Packages" t="ExcludeRecursive" />
-      <e p="Temp\bin" t="ExcludeRecursive" />
+      <e p="Temp" t="ExcludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+      </e>
       <e p="XR.sln" t="IncludeFlat" />
     </e>
   </component>
